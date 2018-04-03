@@ -5,15 +5,16 @@ import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import '@/styles/global.css'
 
 Vue.use(Vuetify, { theme: {
-  primary: '#ee44aa',
-  secondary: '#424242',
-  accent: '#82B1FF',
-  error: '#FF5252',
-  info: '#2196F3',
-  success: '#4CAF50',
-  warning: '#FFC107'
+  primary: '#3949AB',
+  secondary: '#5C6BC0',
+  accent: '#9c27b0',
+  error: '#f44336',
+  warning: '#FFC107',
+  info: '#2196f3',
+  success: '#4caf50'
 }})
 
 Vue.config.productionTip = false
