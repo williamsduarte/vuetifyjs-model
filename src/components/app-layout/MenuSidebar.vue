@@ -3,16 +3,14 @@
     fixed
     :clipped="$vuetify.breakpoint.lgAndUp"
     app
-    v-model="drawer"
-  >
+    v-model="drawer">
     <v-list dense>
       <template v-for="item in items">
         <v-layout
           row
           v-if="item.heading"
           align-center
-          :key="item.heading"
-        >
+          :key="item.heading">
           <v-flex xs6>
             <v-subheader v-if="item.heading">
               {{ item.heading }}
@@ -27,8 +25,7 @@
           v-model="item.model"
           :key="item.text"
           :prepend-icon="item.model ? item.icon : item['icon-alt']"
-          append-icon=""
-        >
+          append-icon="">
           <v-list-tile slot="activator">
             <v-list-tile-content>
               <v-list-tile-title>
@@ -39,8 +36,7 @@
           <v-list-tile
             v-for="(child, i) in item.children"
             :key="i"
-            @click=""
-          >
+            @click="">
             <v-list-tile-action v-if="child.icon">
               <v-icon>{{ child.icon }}</v-icon>
             </v-list-tile-action>
@@ -70,7 +66,7 @@
     props: {
       'drawer': {
         type: Boolean,
-        default: false
+        default: true
       }
     },
     data: () => ({

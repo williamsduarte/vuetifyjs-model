@@ -4,8 +4,7 @@
     dark
     app
     :clipped-left="$vuetify.breakpoint.lgAndUp"
-    fixed
-  >
+    fixed>
     <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
       <v-toolbar-side-icon @click="$emit('toogle')"></v-toolbar-side-icon>
       <span class="hidden-sm-and-down">Loojas</span>
@@ -24,9 +23,7 @@
     <v-btn icon>
       <v-icon>notifications</v-icon>
     </v-btn>
-
     <v-menu offset-y>
-
       <v-btn icon  slot="activator">
         <v-avatar size="32px" tile >
           <v-icon>account_circle</v-icon>
@@ -41,7 +38,6 @@
         </v-list-tile>
       </v-list>
     </v-menu>
-
   </v-toolbar>
 </template>
 <script>
@@ -54,6 +50,5 @@
         { id: 3, title: 'Click Me 2' }
       ]
     })
-
   }
 </script>
