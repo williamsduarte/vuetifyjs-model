@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <MenuTop @toogle="update()" />
+    <Toolbar @toogle="update()" />
     <MenuSidebar :drawer="open" />
     <Dashboard />
   </v-app>
@@ -8,22 +8,20 @@
 
 <script>
   import Dashboard from '@/components/pages/Dashboard'
-  import MenuTop from '@/components/app-layout/MenuTop'
+  import Toolbar from '@/components/app-layout/Toolbar'
   import MenuSidebar from '@/components/app-layout/MenuSidebar'
 
   export default {
     components: {
       Dashboard,
-      MenuTop,
+      Toolbar,
       MenuSidebar
     },
-    data () {
-      return {
-        open: true
-      }
-    },
+    data: () => ({
+      open: true
+    }),
     methods: {
-      update() {
+      update () {
         this.open = !this.open
       }
     }

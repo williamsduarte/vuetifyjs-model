@@ -101,7 +101,7 @@
         { icon: 'help', text: 'Help' },
         { icon: 'phonelink', text: 'App downloads' },
         { icon: 'keyboard', text: 'Go to the old version' }
-      ],
+      ]
     })
   }
 </script>
