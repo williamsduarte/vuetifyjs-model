@@ -1,6 +1,9 @@
 <template>
   <div>
-    <v-btn color="success">{{ linkPlan.title }}</v-btn>
+    <v-btn icon :to="{name: 'dashboard'}">
+      <v-icon>home</v-icon>
+    </v-btn>
+    <v-btn :to="{name: 'plans'}" color="success">{{ linkPlan.title }}</v-btn>
     <v-btn icon>
       <v-icon>apps</v-icon>
     </v-btn>

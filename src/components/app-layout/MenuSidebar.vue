@@ -36,6 +36,7 @@
           <v-list-tile
             v-for="(child, i) in item.children"
             :key="i"
+            router v-bind:to="child.to ? child.to: ''"
             @click="">
             <v-list-tile-action v-if="child.icon">
               <v-icon>{{ child.icon }}</v-icon>
@@ -47,7 +48,7 @@
             </v-list-tile-content>
           </v-list-tile>
         </v-list-group>
-        <v-list-tile v-else @click="" :key="item.text">
+        <v-list-tile v-else @click="" :key="item.text" router v-bind:to="item.to ? item.to: ''">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -71,36 +72,82 @@
     },
     data: () => ({
       items: [
-        { icon: 'contacts', text: 'Contacts' },
-        { icon: 'history', text: 'Frequently contacted' },
-        { icon: 'content_copy', text: 'Duplicates' },
+        { icon: 'dashboard', to: '/', text: 'Dashboard' },
         {
           icon: 'keyboard_arrow_up',
           'icon-alt': 'keyboard_arrow_down',
-          text: 'Labels',
-          model: true,
-          children: [
-            { icon: 'add', text: 'Create label' }
-          ]
-        },
-        {
-          icon: 'keyboard_arrow_up',
-          'icon-alt': 'keyboard_arrow_down',
-          text: 'More',
+          text: 'Produtos',
           model: false,
           children: [
-            { text: 'Import' },
-            { text: 'Export' },
-            { text: 'Print' },
-            { text: 'Undo changes' },
-            { text: 'Other contacts' }
+            { text: 'Criar Produto' },
+            { text: 'Listar produtos' },
+            { text: 'Importar produtos' },
+            { text: 'Categorias' },
+            { text: 'Marcas' },
+            { text: 'Grades' }
           ]
         },
-        { icon: 'settings', text: 'Settings' },
-        { icon: 'chat_bubble', text: 'Send feedback' },
-        { icon: 'help', text: 'Help' },
-        { icon: 'phonelink', text: 'App downloads' },
-        { icon: 'keyboard', text: 'Go to the old version' }
+        { icon: 'monetization_on', text: 'Vendas' },
+        { icon: 'favorite', text: 'Clientes' },
+        { icon: 'poll', text: 'Relatórios' },
+        {
+          icon: 'keyboard_arrow_up',
+          'icon-alt': 'keyboard_arrow_down',
+          text: 'Marketing',
+          model: false,
+          children: [
+            { text: 'Banners' },
+            { text: 'Comparadores de preço' },
+            { text: 'Frete grátis' },
+            { text: 'Cupons de Desconto' },
+            { text: 'Assinatura da Newslleter' }
+          ]
+        },
+        { icon: 'description', text: 'Páginas' },
+        {
+          icon: 'keyboard_arrow_up',
+          'icon-alt': 'keyboard_arrow_down',
+          text: 'Aparência da loja',
+          model: false,
+          children: [
+            { text: 'Configurar tema' },
+            { text: 'Editar CSS' },
+            { text: 'Alterar Logo' },
+            { text: 'Formas de envio' },
+            { text: 'Upload de arquivos' }
+          ]
+        },
+        { icon: 'supervisor_account', text: 'Usuários' },
+        {
+          icon: 'keyboard_arrow_up',
+          'icon-alt': 'keyboard_arrow_down',
+          text: 'Configurações',
+          model: false,
+          children: [
+            { text: 'Dados da loja' },
+            { text: 'Configurações da loja' },
+            { text: 'Incluir código HTML' },
+            { text: 'Formas de envio' },
+            { text: 'Formas de pagamento' },
+            { text: 'Configurações do Google' },
+            { text: 'Redes sociais' },
+            { text: 'Selos' }
+          ]
+        },
+        {
+          icon: 'keyboard_arrow_up',
+          'icon-alt': 'keyboard_arrow_down',
+          text: 'Meu Plano',
+          model: false,
+          children: [
+            { text: 'Situação de sua conta' },
+            { text: 'Dados para cobrança' },
+            { text: 'Dados de fatura' }
+          ]
+        },
+        { icon: 'device_hub', text: 'Parceiros' },
+        { icon: 'chat_bubble', text: 'Enviar feedback' },
+        { icon: 'help', to: 'suporte', text: 'Suporte' }
       ]
     })
   }
