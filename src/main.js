@@ -7,6 +7,14 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import '@/styles/global.css'
 
+// window._ = require('lodash');
+try {
+  window.$ = window.jQuery = require('jquery')
+} catch (e) {}
+
+window.axios = require('axios')
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
+
 Vue.use(Vuetify, { theme: {
   primary: '#3949AB',
   secondary: '#5C6BC0',

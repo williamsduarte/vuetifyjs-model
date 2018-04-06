@@ -22,6 +22,11 @@
       update () {
         this.open = !this.open
       }
+    },
+    mounted () {
+      window.$(document).ready(() => {
+        console.log('Jquery funcionando')
+      })
     }
   }
 </script>

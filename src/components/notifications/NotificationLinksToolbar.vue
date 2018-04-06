@@ -9,7 +9,6 @@
 
   }
 </script>
-
 <style scoped>
   .notification-badge {
     font-family: "Montserrat", sans-serif;
