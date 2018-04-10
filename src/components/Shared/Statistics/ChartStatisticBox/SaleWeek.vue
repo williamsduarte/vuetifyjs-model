@@ -62,7 +62,7 @@
     name: 'sale-week',
     props: [],
     mounted () {
-      window.$(document).ready(function () {
+      jQuery(document).ready(function () {
         google.charts.load('current', { 'packages': ['corechart'] })
         google.charts.setOnLoadCallback(drawChart)
         function drawChart () {
@@ -143,7 +143,7 @@
           let chart = new google.visualization.AreaChart(document.getElementById('chart_div'))
           chart.draw(dataTable, options)
         }
-        window.$(window).resize(function () {
+        jQuery(window).resize(function () {
           drawChart()
           setTimeout(function () {
           }, 1000)
@@ -160,6 +160,8 @@
     },
     computed: {
 
+    },
+    created () {
     }
 }
 </script>

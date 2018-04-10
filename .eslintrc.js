@@ -7,7 +7,9 @@ module.exports = {
     sourceType: 'module'
   },
   globals: {
-    "google": true
+    "google": true,
+    "swal" : true,
+    "jQuery": true
   },
   env: {
     browser: true,
