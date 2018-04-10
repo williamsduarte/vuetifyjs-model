@@ -1,7 +1,5 @@
-import { dashboard } from './dashboard'
-import { plans } from './plans'
+import { home } from './home'
 
 export const routes = [
-  ...dashboard,
-  ...plans
+  ...home
 ]

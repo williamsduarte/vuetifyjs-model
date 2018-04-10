@@ -1,32 +1,36 @@
 <template>
-  <v-app id="inspire">
-    <Toolbar @toogle="update()" />
-    <MenuSidebar :drawer="open" />
+  <div id="home">
+    <SiteHeader />
+    <SideMenuDefault />
     <router-view></router-view>
-  </v-app>
+    <SideMenuPanelContainer />
+  </div>
 </template>
 
 <script>
-  import Toolbar from '@/components/app-layout/Toolbar'
-  import MenuSidebar from '@/components/app-layout/MenuSidebar'
 
-  export default {
-    components: {
-      Toolbar,
-      MenuSidebar
-    },
-    data: () => ({
-      open: true
-    }),
-    methods: {
-      update () {
-        this.open = !this.open
-      }
-    },
-    mounted () {
-      window.$(document).ready(() => {
-        console.log('Jquery funcionando')
-      })
+import SiteHeader from '@/components/Shared/Header/SiteHeader'
+import SideMenuDefault from '@/components/Shared/Sidebar/SideMenuDefault'
+import SideMenuPanelContainer from '@/components/Shared/Sidebar/SideMenuPanelContainer'
+
+export default {
+  name: 'home',
+  data () {
+    return {
     }
+  },
+  components: {
+    SiteHeader,
+    SideMenuDefault,
+    SideMenuPanelContainer
+  },
+  mounted () {
+    console.log('Component mounted.')
   }
+
+}
 </script>
+
+<style scope>
+
+</style>

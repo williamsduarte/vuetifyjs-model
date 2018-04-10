@@ -1,4 +1,4 @@
-import Plans from '@/components/pages/Plans'
+import Plans from '@/components/Pages/Plans'
 
 export const plans = [
   {

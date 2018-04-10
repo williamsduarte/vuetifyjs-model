@@ -1,15 +1,17 @@
 // https://eslint.org/docs/user-guide/configuring
-
+/*global google*/
 module.exports = {
   root: true,
   parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module'
   },
+  globals: {
+    "google": true
+  },
   env: {
     browser: true,
   },
-  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
   extends: 'standard',
   // required to lint *.vue files
   plugins: [
@@ -20,6 +22,9 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'space-before-function-paren': ["error", "always"],
+
   }
+
 }
