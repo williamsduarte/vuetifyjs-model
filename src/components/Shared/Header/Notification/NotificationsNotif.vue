@@ -16,7 +16,7 @@
       <div class="dropdown-menu-notif-list">
         <div class="dropdown-menu-notif-item">
           <div class="photo">
-            <img src="src/assets/img/photo-64-1.jpg" alt="">
+            <img src="static/img/photo-64-1.jpg" alt="">
           </div>
           <div class="dot"></div>
           <a href="#">Morgan</a> was bothering about something
@@ -24,7 +24,7 @@
         </div>
         <div class="dropdown-menu-notif-item">
           <div class="photo">
-            <img src="src/assets/img/photo-64-2.jpg" alt="">
+            <img src="static/img/photo-64-2.jpg" alt="">
           </div>
           <div class="dot"></div>
           <a href="#">Lioneli</a> had commented on this <a href="#">Super Important Thing</a>
@@ -32,7 +32,7 @@
         </div>
         <div class="dropdown-menu-notif-item">
           <div class="photo">
-            <img src="src/assets/img/photo-64-3.jpg" alt="">
+            <img src="static/img/photo-64-3.jpg" alt="">
           </div>
           <div class="dot"></div>
           <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
@@ -40,7 +40,7 @@
         </div>
         <div class="dropdown-menu-notif-item">
           <div class="photo">
-            <img src="src/assets/img/photo-64-4.jpg" alt="">
+            <img src="static/img/photo-64-4.jpg" alt="">
           </div>
           <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to see <a href="#">This Movie</a>
           <div class="color-blue-grey-lighter">7 hours ago</div>

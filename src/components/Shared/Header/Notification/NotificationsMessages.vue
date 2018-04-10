@@ -35,22 +35,22 @@
         <div class="tab-pane active" id="tab-incoming" role="tabpanel">
           <div class="dropdown-menu-messages-list">
             <a href="#" class="mess-item">
-            <span class="avatar-preview avatar-preview-32"><img src="src/assets/img/photo-64-2.jpg" alt=""></span>
+            <span class="avatar-preview avatar-preview-32"><img src="static/img/photo-64-2.jpg" alt=""></span>
             <span class="mess-item-name">Tim Collins</span>
             <span class="mess-item-txt">Morgan was bothering about something!</span>
             </a>
             <a href="#" class="mess-item">
-            <span class="avatar-preview avatar-preview-32"><img src="src/assets/img/avatar-2-64.png" alt=""></span>
+            <span class="avatar-preview avatar-preview-32"><img src="static/img/avatar-2-64.png" alt=""></span>
             <span class="mess-item-name">Christian Burton</span>
             <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something.</span>
             </a>
             <a href="#" class="mess-item">
-            <span class="avatar-preview avatar-preview-32"><img src="src/assets/img/photo-64-2.jpg" alt=""></span>
+            <span class="avatar-preview avatar-preview-32"><img src="static/img/photo-64-2.jpg" alt=""></span>
             <span class="mess-item-name">Tim Collins</span>
             <span class="mess-item-txt">Morgan was bothering about something!</span>
             </a>
             <a href="#" class="mess-item">
-            <span class="avatar-preview avatar-preview-32"><img src="src/assets/img/avatar-2-64.png" alt=""></span>
+            <span class="avatar-preview avatar-preview-32"><img src="static/img/avatar-2-64.png" alt=""></span>
             <span class="mess-item-name">Christian Burton</span>
             <span class="mess-item-txt">Morgan was bothering about something...</span>
             </a>
@@ -59,22 +59,22 @@
         <div class="tab-pane" id="tab-outgoing" role="tabpanel">
           <div class="dropdown-menu-messages-list">
             <a href="#" class="mess-item">
-            <span class="avatar-preview avatar-preview-32"><img src="src/assets/img/avatar-2-64.png" alt=""></span>
+            <span class="avatar-preview avatar-preview-32"><img src="static/img/avatar-2-64.png" alt=""></span>
             <span class="mess-item-name">Christian Burton</span>
             <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something...</span>
             </a>
             <a href="#" class="mess-item">
-            <span class="avatar-preview avatar-preview-32"><img src="src/assets/img/photo-64-2.jpg" alt=""></span>
+            <span class="avatar-preview avatar-preview-32"><img src="static/img/photo-64-2.jpg" alt=""></span>
             <span class="mess-item-name">Tim Collins</span>
             <span class="mess-item-txt">Morgan was bothering about something! Morgan was bothering about something.</span>
             </a>
             <a href="#" class="mess-item">
-            <span class="avatar-preview avatar-preview-32"><img src="src/assets/img/avatar-2-64.png" alt=""></span>
+            <span class="avatar-preview avatar-preview-32"><img src="static/img/avatar-2-64.png" alt=""></span>
             <span class="mess-item-name">Christian Burtons</span>
             <span class="mess-item-txt">Morgan was bothering about something!</span>
             </a>
             <a href="#" class="mess-item">
-            <span class="avatar-preview avatar-preview-32"><img src="src/assets/img/photo-64-2.jpg" alt=""></span>
+            <span class="avatar-preview avatar-preview-32"><img src="static/img/photo-64-2.jpg" alt=""></span>
             <span class="mess-item-name">Tim Collins</span>
             <span class="mess-item-txt">Morgan was bothering about something!</span>
             </a>
